@@ -1,14 +1,14 @@
 const input1 = document.querySelector("#inpt1");
 
-const input2 = document.querySelector("#inpt2");
+// const input2 = document.querySelector("#inpt2");
 
 const output = document.querySelector(".output");
 
-const button1 = document.querySelector("#btn1");
+const button = document.querySelector("#btn1");
 
-const button2 = document.querySelector("#btn2");
+// const button2 = document.querySelector("#btn2");
 
-const heading = document.querySelector("#head");
+// const heading = document.querySelector("#head");
 
 // const url = "https://mock-practice.prakhar10v.repl.co/items";
 
@@ -153,7 +153,7 @@ const heading = document.querySelector("#head");
 //   FetchCall(url2);
 // });
 
-//-------------------------------31)
+//-----------------------------------------------31)
 
 // const url = "https://otpgenerator.ishanjirety.repl.co/get-otp?name=";
 
@@ -184,5 +184,142 @@ const heading = document.querySelector("#head");
 //   } else {
 //     output.innerHTML = "Failed!!!";
 //     output.style.color = "Red";
+//   }
+// });
+
+//-------------------------------------------------32)
+
+// const url = "https://jsonplaceholder.typicode.com/todos";
+
+// button.addEventListener("click", () => {
+//   fetch(url)
+//     .then((response) => response.json())
+//     .then((json) => {
+//       for (var i = 0; i < json.length; i++) {
+//         console.log(json[i].title);
+//       }
+//     });
+// });
+
+//--------------------------------------------------33)
+
+// button.addEventListener("click", () => {
+//   var lastDigit = (Number(input1.value) * Number(input1.value)) % 10;
+
+//   if (input1.value == lastDigit) {
+//     output.innerHTML = "Automorphic Number";
+//   } else {
+//     output.innerHTML = "Non-automorphic Number";
+//   }
+// });
+
+//---------------------------------------------35)
+
+// var funTour = [
+//   {
+//     task: "Tree climbing",
+//     completed: true,
+//   },
+//   {
+//     task: "Scooba Diving",
+//     completed: false,
+//   },
+//   {
+//     task: "Tracking",
+//     completed: true,
+//   },
+// ];
+
+// button.addEventListener("click", () => {
+//   for (var i = 0; i < funTour.length; i++) {
+//     // console.log(funTour[i]);
+//     if (funTour[i].completed == true) {
+//       console.log(funTour[i].task);
+//     }
+//   }
+// });
+
+//----------------------------------------------------36)
+
+// const url = "https://stock-api.desaihetav.repl.co/current-price/";
+
+// function constructUrl(text) {
+//   return url + text;
+// }
+
+// function fetchCall() {
+//   var text = input1.value;
+//   //   var newUrl = constructUrl(text);
+//   fetch(url)
+//     .then((response) => response.json())
+//     .then((json) => {
+//       var temp = json.current_price;
+//       console.log(temp);
+//       if (temp > input2.value) {
+//         console.log("Profit of ", temp - input2.value);
+//       } else {
+//         console.log("Loss");
+//       }
+//     });
+// }
+
+//--------------------------------------------------37)
+
+// button.addEventListener("click", fetchCall);
+
+// const url = "https://stock-api.desaihetav.repl.co/list";
+
+// button.addEventListener("click", () => {
+//   fetch(url)
+//     .then((response) => response.json())
+//     .then((json) => {
+//       for (var i = 0; i < json.data.length; i++) {
+//         output.innerHTML += `<li>${json.data[i].id} -> ${json.data[i].name}</li>`;
+//       }
+//     });
+// });
+
+//----------------------------------------------------38)
+
+// const url = "https://nftbaazarapi.rawheatg.repl.co/product";
+// button.addEventListener("click", () => {
+//   fetch(url)
+//     .then((response) => response.json())
+//     .then((json) => {
+//       for (var i = 0; i < json.data.length; i++) {
+//         output.innerHTML += `<li>${json.data[i].name}</li>`;
+//       }
+//     });
+// });
+
+// const url = "https://mock-practice.prakhar10v.repl.co/items";
+
+// button.addEventListener("click", () => {
+//   fetch(url)
+//     .then((Response) => Response.json())
+//     .then((json) => {
+//       let maxPrice = json[0].price;
+//       for (var i = 0; i < json.length; i++) {
+//         if (json[i].price > maxPrice) {
+//           maxPrice = json[i].price;
+//         }
+//       }
+//       console.log(maxPrice);
+//     });
+// });
+
+//-------------------------------------20)
+
+// button.disabled = true;
+
+// var temp = 10;
+
+// input1.addEventListener("input", (e) => {
+//   if (input1.value.length > 0) {
+//     // console.log("clicked");
+//     output.innerText = 10 - e.target.value.length;
+//     button.disabled = false;
+//   } else {
+//     button.disabled = true;
 //   }
 // });
