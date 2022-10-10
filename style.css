@@ -1,0 +1,13 @@
+input {
+  display: block;
+  margin-bottom: 1rem;
+}
+
+button {
+  background-color: rgb(173, 201, 143);
+  padding: 5px;
+  cursor: pointer;
+  position: absolute;
+  left: 500;
+  top: 400;
+}

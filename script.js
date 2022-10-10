@@ -1,10 +1,10 @@
-const input1 = document.querySelector("#inpt1");
+// const input1 = document.querySelector("#inpt1");
 
 // const input2 = document.querySelector("#inpt2");
 
-const output = document.querySelector(".output");
+// const output = document.querySelector(".output");
 
-const button = document.querySelector("#btn1");
+// const button1 = document.querySelector("#btn1");
 
 // const button2 = document.querySelector("#btn2");
 
@@ -323,3 +323,47 @@ const button = document.querySelector("#btn1");
 //     button.disabled = true;
 //   }
 // });
+
+// Build a counter application and then some questions were asked related to the coding part.
+
+// const url = "https://mock-practice.prakhar10v.repl.co/items";
+
+// button1.addEventListener("click", () => {
+//   fetch(url)
+//     .then((response) => response.json())
+//     .then((json) => {
+//       for (var i = 0; i < json.length; i++) {
+//         if (json[i].price > 1000) {
+//           console.log(json[i].price);
+//         }
+//       }
+//     });
+// });
+
+// const url = "https://mock-practice.prakhar10v.repl.co/items";
+// let maxPrice = [];
+
+// button1.addEventListener("click", () => {
+//   fetch(url)
+//     .then((Response) => Response.json())
+//     .then((json) => {
+//       for (var i = 0; i < json.length; i++) {
+//         console.log(json[i].price);
+//         maxPrice += json[i].price;
+//       }
+//       console.log(maxPrice);
+//     });
+// });
+
+var x = 0;
+
+const button = document.querySelector("#btn");
+
+button.addEventListener(
+  "mouseover",
+  () => {
+    x++;
+    button.style.float = "rigth";
+  },
+  10
+);
